@@ -1,0 +1,17 @@
+<h2>Products</h2>
+
+<!-- directive  *ngFor -->
+<div *ngFor="let product of products">
+  <!-- interpolation syntax {{}}-->
+  <h3>{{ product.name }}</h3>
+
+  <!-- property binding syntax []-->
+  <a [title]="product.name + ' details'">
+    {{ product.name }}
+  </a>
+
+  <!-- directive  *ngIf -->
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+
+  <button type="button" (click)="share()">share</button>
+</div>
