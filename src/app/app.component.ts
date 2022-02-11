@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { Product } from './products';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,5 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+  products: Product[];
 }

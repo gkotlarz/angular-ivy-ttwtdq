@@ -1,9 +1,9 @@
-export class Products {
-  products: Product[];
-}
 
-export class Product {
+
+
+export interface Product {
   name: string;
   description: string;
   price: bigint;
 }
+
