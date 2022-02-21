@@ -8,5 +8,5 @@ import { Product } from './products';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
-  products: Product[];
+  //  products: Product[];
 }
