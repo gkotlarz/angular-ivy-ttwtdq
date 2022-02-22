@@ -1,12 +1,12 @@
 import { Component, VERSION } from '@angular/core';
-import { Product } from './products';
+import { Product, products } from './products';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
-  products: Product[];
+  products: Product[] = products;
 }
