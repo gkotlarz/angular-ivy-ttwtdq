@@ -1,20 +1,23 @@
 <h2>Products</h2>
 
 <!-- directive  *ngFor -->
-<div *ngFor="let product of products">
+<div *ngFor="let product2 of products2">
   <!-- interpolation syntax {{}}-->
-  <h3>{{ product.name }}</h3>
+  <h3>{{ product2.name }}</h3>
 
   <!-- property binding syntax []-->
-  <a [title]="product.name + ' details'">
-    {{ product.name }}
+  <a [title]="product2.name + ' details'">
+    {{ product2.name }}
   </a>
 
   <!-- directive  *ngIf -->
-  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <p *ngIf="product2.description">Description: {{ product2.description }}</p>
 
   <button type="button" (click)="share()">share</button>
 
   <!-- to display ProductAlertsComponent as a child of ProductListComponent -->
-  <app-product-alerts [product]="product"> </app-product-alerts>
+  <app-product-alerts [product]="product2"> </app-product-alerts>
 </div>
+
+<button type="button" (click)="share()">test print products</button>
+
