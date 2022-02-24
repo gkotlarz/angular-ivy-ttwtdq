@@ -24,6 +24,7 @@ export class ProductListComponent implements OnInit {
     console.log(this.products2[0].name);
     console.log(this.products2[0].description);
     //window.alert('share');
+    console.log('manual update');
   }
 }
  
