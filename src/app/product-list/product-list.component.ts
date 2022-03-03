@@ -19,11 +19,7 @@ export class ProductListComponent implements OnInit {
 
   share() {
     console.log(this.products);
-    console.log(this.products.length);
-    console.log(this.products[0].name);
-    console.log(this.products[0].description);
-    //window.alert('share');
-    console.log('manual update');
+    window.alert("The product has been shared! ");
   }
 }
  
