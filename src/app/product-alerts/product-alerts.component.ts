@@ -19,8 +19,8 @@ export class ProductAlertsComponent implements OnInit {
 
   // Configuring ProductAlertsComponent with an @Output() allows the ProductAlertsComponent to emit an event when the value of the notify property changes.
   // <app-product-alerts 
-  // [product]="product"
-  // (notify)="onNotify()"> </app-product-alerts>
+  //   [product]="product"
+  //   (notify)="onNotify()"> </app-product-alerts>
   @Output() 
   notify = new EventEmitter();
 

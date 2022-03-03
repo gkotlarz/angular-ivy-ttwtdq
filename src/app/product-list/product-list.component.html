@@ -21,6 +21,7 @@
 
   <!-- to display ProductAlertsComponent as a child of ProductListComponent -->
   <!-- see  @Output() notify = new EventEmitter(); in app-product-alerts -->
+  <!-- the same as button click calls share(), the same produc-alert when emmits event that is -->
   <app-product-alerts 
       [product]="product"
       (notify)="onNotify()"> </app-product-alerts>
