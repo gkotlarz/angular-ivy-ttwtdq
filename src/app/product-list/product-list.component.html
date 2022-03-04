@@ -9,9 +9,19 @@
   <h3>{{ product.name }}</h3>
 
   <!-- property binding syntax []-->
-  <a [title]="product.name + ' details'">
+  <!-- The RouterLink directive helps you customize the anchor element. 
+    URL, contains one fixed segment, /products. 
+    The final segment is variable-->
+  <a [title]="product.name + ' details'"
+     [routerLink]="['/products', product.id]">
     {{ product.name }}
   </a>
+
+  <a routerLink="/productdetails"
+     routerLinkActive="active">
+   grs
+</a>
+
 
   <!-- directive  *ngIf -->
   <p *ngIf="product.description">Description: {{ product.description }}</p>

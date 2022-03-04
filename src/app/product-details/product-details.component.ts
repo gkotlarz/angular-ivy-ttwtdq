@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    // BTW. each time routing routes to component, 
+    // constructor is called  - means new instance is created!
+    console.log("ProductDetailsComponent constructor. ");
+  }
 
   ngOnInit(): void {
   }
