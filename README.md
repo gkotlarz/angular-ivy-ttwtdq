@@ -30,3 +30,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# GIThub
+In order to display contributions to project, commits/pushes need to be done with email confiugred for github account.
+For example: 
+git config  user.name "Grzegorz Kotlarz"
+git config  user.email gkotlarz@iapps-technologies.com
