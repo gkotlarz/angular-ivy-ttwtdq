@@ -13,7 +13,7 @@ export class TopBarComponent implements OnInit {
   }
 
   checkout() {
-    
+    console.log("checkout()")
   }
 
 }
