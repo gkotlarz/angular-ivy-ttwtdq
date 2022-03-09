@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Product, products } from '../products';
 import { ActivatedRoute } from '@angular/router';
+
+import { Product, products } from '../products';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-product-details',
@@ -16,7 +18,7 @@ export class ProductDetailsComponent implements OnInit {
   // ActivatedRoute is specific to each component that the Angular Router loads. ActivatedRoute contains information about the route and the route's parameters.
   // By injecting ActivatedRoute, you are configuring the component to use a service. The Managing Data step covers services in more detail.
   // By injecting ActivatedRoute, you are configuring the component to use a service. 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private cartService: CartService) {
     // BTW. each time routing routes to component, 
     // constructor is called  - means new instance is created!
     console.log("ProductDetailsComponent constructor. ");
@@ -31,6 +33,14 @@ export class ProductDetailsComponent implements OnInit {
     this.product = products.find(product => product.id === productIdFromRoute); 
 
     console.log("ProductDetailsComponent ngOnInit. ");
+  }
+
+  addToCart(product: Product) {
+    const msg = 'Your product has been added to the cart! ' + product.name;
+    console.log(msg);
+    this.cartService.addToCart(product);
+    window.alert(msg);
+
   }
 
 }

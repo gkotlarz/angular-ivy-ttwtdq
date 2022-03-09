@@ -5,5 +5,7 @@
     <h4>{{product.price | currency}}</h4>  <!--  uses the currency pipe to transform product.price from a number to a currency string.  -->
     <p>{{product.description}}</p>
 
+    <button type="button" (click)="addToCart(product)">Buy</button>
+
     <a routerLink="">Go to main page.</a>
 </div>
