@@ -35,4 +35,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 In order to display contributions to project, commits/pushes need to be done with email confiugred for github account.
 For example: 
 git config  user.name "Grzegorz Kotlarz"
-git config  user.email gkotlarz@iapps-technologies.com
+git config  user.email gkotlarz@sgmail.com
