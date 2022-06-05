@@ -10,7 +10,7 @@ import { HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
-// not used because product-list-component is no longer in app.component.html, it has prouct propterty
+// not used because product-list-component is no longer in app.component.html, it has product property
 //import { products, Product } from './products';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
